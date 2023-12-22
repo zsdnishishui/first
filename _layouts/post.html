@@ -5,6 +5,7 @@ layout: default
 <article>
   <h2>{{ page.title }}</h2>
   <time datetime="{{ page.date | date_to_xmlschema }}" class="by-line">{{ page.date | date: '%Y-%m-%d' }}</time>
+  <span id="busuanzi_container_page_pv">阅读量<span id="busuanzi_value_page_pv"></span>次</span>
 </article>
 {% if site.toc %}
 <div class="container">
@@ -39,7 +40,4 @@ layout: default
         async>
 </script>
 
-<script type='text/javascript' src='https://www.intensedebate.com/js/genericCommentWrapperV2.js'></script>
-<script type="text/javascript" src="https://www.intensedebate.com/js/genericLinkWrapperV2.js"></script>
 
-<span id="busuanzi_container_page_pv">本文总阅读量<span id="busuanzi_value_page_pv"></span>次</span>
