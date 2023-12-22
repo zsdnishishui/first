@@ -31,3 +31,5 @@ plugins:
 # Custom variables
 owner : "zsdnishishui"
 year : "2023"
+
+toc: true

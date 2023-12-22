@@ -4,9 +4,25 @@ layout: default
 
 <article>
   <h2>{{ page.title }}</h2>
-  <time datetime="{{ page.date | date_to_xmlschema }}" class="by-line">{{ page.date | date_to_string }}</time>
-  {{ content }}
+  <time datetime="{{ page.date | date_to_xmlschema }}" class="by-line">{{ page.date | date: '%Y-%m-%d' }}</time>
 </article>
+{% if site.toc %}
+<div class="container">
+  <div class="contents">
+    <article class="markdown-body">
+      {{ page.content }}
+    </article>
+  </div>
+  <div class="table-of-contents">
+    <h2>目录</h2>
+    {% include toc.html html=content %}
+  </div>
+</div>
+{% else %}
+<article class="markdown-body">
+  {{ page.content }}
+</article>
+{% endif %}
 <script>
   var idcomments_acct = '48a63007f7106c5fea5ab9317abd36f6';
   var idcomments_post_id;
