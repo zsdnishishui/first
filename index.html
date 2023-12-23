@@ -5,9 +5,12 @@ layout: default
 <ul>
     {% for post in paginator.posts %}
       <li>
-          <h2><a href="{{ post.url | prepend: site.baseurl | replace: '//', '/' }}">{{ post.title }}</a></h2>
-          <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: '%Y-%m-%d' }}</time>
-          <p>{{ post.content | strip_html | truncatewords:15 }}</p>
+          <h2>
+              <a href="{{ post.url | prepend: site.baseurl | replace: '//', '/' }}">{{ post.title }}</a>
+              <time  style="font-size: 14px;float: right;margin-top: 13px;" datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: '%Y-%m-%d' }}</time>
+          </h2>
+
+          <p>{{ post.content | strip_html | truncate:200 }}</p>
       </li>
     {% endfor %}
 </ul>

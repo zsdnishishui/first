@@ -5,6 +5,7 @@ layout: default
 <article>
   <h2>{{ page.title }}</h2>
   <time datetime="{{ page.date | date_to_xmlschema }}" class="by-line">{{ page.date | date: '%Y-%m-%d' }}</time>
+  <span id="busuanzi_container_page_pv">阅读量<span id="busuanzi_value_page_pv"></span>次</span>
 </article>
 {% if site.toc %}
 <div class="container">
@@ -23,13 +24,20 @@ layout: default
   {{ page.content }}
 </article>
 {% endif %}
-<script>
-  var idcomments_acct = '48a63007f7106c5fea5ab9317abd36f6';
-  var idcomments_post_id;
-  var idcomments_post_url;
+<script src="https://giscus.app/client.js"
+        data-repo="zsdnishishui/zsdnishishui.github.io"
+        data-repo-id="R_kgDOKdbMYg"
+        data-category="Announcements"
+        data-category-id="DIC_kwDOKdbMYs4Cb77x"
+        data-mapping="pathname"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="bottom"
+        data-theme="dark"
+        data-lang="zh-CN"
+        crossorigin="anonymous"
+        async>
 </script>
-<span id="IDCommentsPostTitle" style="display:none"></span>
-<script type='text/javascript' src='https://www.intensedebate.com/js/genericCommentWrapperV2.js'></script>
-<script type="text/javascript" src="https://www.intensedebate.com/js/genericLinkWrapperV2.js"></script>
 
-<span id="busuanzi_container_page_pv">本文总阅读量<span id="busuanzi_value_page_pv"></span>次</span>
+
