@@ -1,12 +1,12 @@
 title: zsdnishishui的博客
-description: "个人博客"
+description: "zsdnishishui的博客"
 author:
   name: "zsdnishishui"
-  email: "someone@somewebsite.somedomain"
+  email: "zsdnishishui@163.com"
   url: "https://zsdnishishui.github.io"
 
 baseurl: /
-
+url: "https://zsdnishishui.github.io"
 source: .
 destination: ./_site
 permalink: /:title
