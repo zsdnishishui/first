@@ -1,11 +1,12 @@
 <header>
   <div>
     <a href="{{ "/" | prepend: site.baseurl | replace: '//', '/' }}">
-    {% assign owner_first_name = site.owner | split: " " %}
+<!--    {% assign owner_first_name = site.owner | split: " " %}-->
     <h1>{{ owner_first_name[0] | downcase }}的博客</h1>
     </a>
     <div class="header-links">
       {% include links.html %}
     </div>
+    <span style="float: right;margin-top: -20px;margin-right: 200px;">只有创造才是真</span>
   </div>
 </header>
