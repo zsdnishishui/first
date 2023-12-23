@@ -93,8 +93,9 @@ chown -R es:es  当前文件夹名
 ### 3.1 新增索引
 
 要把mapping一起导入，用PUT方法
-
-```
+<details>
+<summary>展开脚本</summary>
+<pre><code>
 /索引名
 
 {
@@ -207,7 +208,8 @@ chown -R es:es  当前文件夹名
     }
   }
 }
-```
+</code></pre>
+</details>
 
 注：text与keyword的区别
 
@@ -240,8 +242,9 @@ keyword:没有提供分词，但是可以全词匹配
 ### 3.4 导入与导出的python3脚本
 
 单线程版
-
-```
+<details>
+<summary>展开脚本</summary>
+<pre><code>
 import json
 import os
 import sys
@@ -320,11 +323,14 @@ if __name__ == '__main__':
     exportEsData("http://*****:9200", index, type).exportData()  #导出数据
     
     importEsData("http://****:9200", index, type).importData()  #导入数据
-```
+</code></pre>
+</details>
+
 
 大数据量导出，导入的多线程版
-
-```
+<details>
+<summary>展开脚本</summary>
+<pre><code>
 import json
 import threading
 import time
@@ -436,7 +442,8 @@ if __name__ == '__main__':
 
     print('main thread')
     thread_pool.shutdown()
-```
+</code></pre>
+</details>
 
 ### 3.5 利用bulk进行数据导出导入
 
