@@ -4,13 +4,14 @@ layout: page
 <div id="archives">
     {% for category in site.categories %}
     {% capture category_name %}{{ category | first }}{% endcapture %}
-    <a href="/category/#{{category_name}}">{{category_name}}（{{
+    <a href="/category#{{category_name}}">{{category_name}}（{{
         site.categories[category_name].size }}）</a>
     {%endfor %}
     {% for category in site.categories %}
     <div>
         {% capture category_name %}{{ category | first }}{% endcapture %}
         <a id="{{ category_name | slugize }}"></a>
+
         <h3>{{ category_name }} ({{
             site.categories[category_name].size }})</h3>
 
