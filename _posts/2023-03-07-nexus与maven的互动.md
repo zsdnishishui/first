@@ -33,9 +33,9 @@ http://c.biancheng.net/nexus/deployment.html
 </mirror>
 ```
 
-**注意：<mirrorOf>central</mirrorOf>不要写成<mirrorOf>\*</mirrorOf>**
+**注意：<mirrorOf>central</mirrorOf>不要写成<mirrorOf>反斜杠*</mirrorOf>**
 
-**如果是\*的话，会拦截所有路径，就不走私服的路径了，导致找不到构件。**
+**如果是反斜杠*的话，会拦截所有路径，就不走私服的路径了，导致找不到构件。**
 
 4.maven常用的命令参数
 
