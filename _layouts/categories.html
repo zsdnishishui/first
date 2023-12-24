@@ -10,12 +10,10 @@ layout: page
     {% for category in site.categories %}
     <div>
         {% capture category_name %}{{ category | first }}{% endcapture %}
-        <div id="#{{ category_name | slugize }}"></div>
-        <p></p>
-
+        <a id="{{ category_name | slugize }}"></a>
         <h3>{{ category_name }} ({{
             site.categories[category_name].size }})</h3>
-        <a name="{{ category_name | slugize }}"></a>
+
         {%for post in site.categories[category_name] %}
         <ul>
             <li><a href="{{ post.url }}">{{ post.title }}</a></li>
