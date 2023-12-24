@@ -1,3 +1,7 @@
+---
+published: true
+categories: 软件
+---
 随着分布式系统越来越多，数据一致性和单点故障的问题越来越突出。zookeeper应运而生。
 
 学习：对于熟悉Linux系统的人，学习zookeeper比较容易，因为它涉及到文件系统的一些概念，比如文件目录、ACL权限

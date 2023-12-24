@@ -1,3 +1,7 @@
+---
+published: true
+categories: 软件
+---
 ## 1. 安装
 
 ### 1.1 环境准备

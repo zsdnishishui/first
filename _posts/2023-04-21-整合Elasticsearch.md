@@ -1,3 +1,7 @@
+---
+published: true
+categories: 软件
+---
 最近在框架中整合了es组件，稍微了解了一下。
 
 简介：是基于Lucene的搜索引擎，天生支持分布式（分片）

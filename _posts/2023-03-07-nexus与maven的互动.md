@@ -1,3 +1,7 @@
+---
+published: true
+categories: 软件
+---
 nexus一般是作为maven的私服使用，有的公司让他代理阿里云的中央仓库，有的公司只是存储自己的构件。
 
 nexus的仓库分四种见下图

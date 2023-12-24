@@ -1,3 +1,7 @@
+---
+published: true
+categories: 软件
+---
 1.搭建jenkins
 
 1.1准备安装环境
