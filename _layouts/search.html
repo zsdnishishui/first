@@ -1,0 +1,52 @@
+---
+layout: default
+---
+<style>
+
+    /* 修改输入框样式 */
+    #search-input {
+        width: 100%;
+        max-width: 500px;
+        margin-bottom: 20px;
+        padding: 10px;
+        font-size: 16px;
+        border: none;
+        border-bottom: 2px solid #ccc;
+        border-radius: 0;
+    }
+
+    /* 修改输入框聚焦样式 */
+    #search-input:focus {
+        outline: none;
+        border-bottom: 2px solid #000;
+    }
+
+</style>
+<input type="text" id="search-input" placeholder="请输入标题、相关内容或日期">
+<div class="content">
+    <div id="results-container">
+        <ul></ul>
+        <p class="no-results" style="display:none;">没有搜索到相关文章</p>
+    </div>
+</div>
+<script src="/simple-jekyll-search.min.js"></script>
+<script>
+    SimpleJekyllSearch({
+        searchInput: document.getElementById('search-input'),
+        resultsContainer: document.getElementById('results-container').querySelector('ul'),
+        json: '/search.json',
+        searchResultTemplate: '<li><a href="{url}" title="{title}">{title}</a></li>',
+        noResultsText: '', // 将此处设置为空字符串
+        limit: 20,
+        fuzzy: false,
+        onSearchComplete: function(searchResults) { // 添加此行
+            var noResults = document.querySelector('.no-results');
+            if (searchResults.length === 0) {
+                noResults.style.display = 'block';
+            } else {
+                noResults.style.display = 'none';
+            }
+        }
+    });
+
+</script>
