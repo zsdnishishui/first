@@ -322,3 +322,15 @@ a:active, a:focus {
     }
   }
 }
+#back-top a {
+  width:50px;
+  height: 50px;
+  position: fixed;
+  bottom: 30px;
+  right: 0%;
+  margin-right: 40px;
+  background: url(/img/bg_up_arrow.png) no-repeat center center;
+  text-decoration: none;
+  padding: 12px 14px;
+  display: inline-block;
+}
