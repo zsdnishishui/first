@@ -3,11 +3,14 @@ layout: page
 ---
 <div class="layout">
     <aside class="aside">
-        {% for category in site.categories %}
-        {% capture category_name %}{{ category | first }}{% endcapture %}
-        <a href="/category#{{category_name}}">{{category_name}}（{{
-            site.categories[category_name].size }}）</a>
-        {%endfor %}
+        <div class="category">
+            {% for category in site.categories %}
+            {% capture category_name %}{{ category | first }}{% endcapture %}
+            <a href="/category#{{category_name}}">{{category_name}}（{{
+                site.categories[category_name].size }}）</a>
+            {%endfor %}
+        </div>
+
     </aside>
     <article class="article">
         {% for category in site.categories %}
@@ -39,4 +42,12 @@ layout: page
     }
     .aside{width: 180px;height: 100%;margin-left: 50px;}
     .article{flex: 1;height: 100%;margin-left: 100px;}
+    .category{
+        position: fixed;
+        /* 固定定位的盒子也必须写边偏移 */
+        top: 145px;
+        left: 150px;
+        width: 180px;
+        height: 100%;
+    }
 </style>
