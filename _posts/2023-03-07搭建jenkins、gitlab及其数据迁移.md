@@ -20,7 +20,6 @@ categories: 软件
 
 
 
-添加图片注释，不超过 140 字（可选）
 
 ![img](https://picx.zhimg.com/80/v2-b748b381bd6bdd01a561cbadc2be74a5_720w.png?source=d16d100b)
 
@@ -28,7 +27,6 @@ categories: 软件
 
 
 
-添加图片注释，不超过 140 字（可选）
 
 1.2启动jenkins
 
@@ -49,7 +47,6 @@ cd /etc/init.d
 
 
 
-添加图片注释，不超过 140 字（可选）
 
 如果想多传几个jar包，可以点击
 
@@ -59,7 +56,6 @@ cd /etc/init.d
 
 
 
-添加图片注释，不超过 140 字（可选）
 
 构建后之后jar包的位置在/var/lib/jenkins/workspace/下面
 
