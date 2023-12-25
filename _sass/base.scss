@@ -343,7 +343,7 @@ a:active, a:focus {
 
 /**手机适配**/
 @media only screen and (max-width: 767px) {
-  .width-phone{overflow-x: hidden;padding-right: 10px;}
+  .width-phone{overflow-x: hidden;padding: 0 10px;}
   ul{
     padding-left: 20px;
   }
