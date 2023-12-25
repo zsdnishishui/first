@@ -71,7 +71,7 @@ section {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  margin: 0 0 20px;
+  margin: 0;
 }
 
 li {
@@ -87,13 +87,10 @@ li {
 header {
   background: rgba(0, 0, 0, 0.1);
   border-bottom: 1px dashed $conifer; //header;
-  padding: 20px;
+  padding: 10px;
   margin: 0 0 40px 0;
 }
 
-.header-links {
-  text-align: center;
-}
 
 .header-link {
   display: inline;
@@ -272,6 +269,7 @@ hr {
 a {
   color: #63c0f5;
   text-shadow: 0 0 5px rgba(104, 182, 255, 0.5);
+  text-decoration: none;
 }
 
 a:active, a:focus {
@@ -312,19 +310,7 @@ a:active, a:focus {
 }
 
 
-@media screen and (max-width: 1050px) {
-  .container {
-    width: 100%;
-    .contents {
-      width: 100%;
-      float: none;
-      margin: 0 auto;
-    }
-    .table-of-contents {
-      display: none;
-    }
-  }
-}
+
 #back-top a {
   width:50px;
   height: 50px;
@@ -357,11 +343,21 @@ a:active, a:focus {
 
 /**手机适配**/
 @media only screen and (max-width: 767px) {
+  .width-phone{overflow-x: hidden;padding-right: 10px;}
+  ul{
+    padding-left: 20px;
+  }
   header{width:100%}
-  .spirit{
-    float: right;
-    margin-top: 0;
-    margin-right: 20px;
+  .container {
+    width: 100%;
+    .contents {
+      width: 100%;
+      float: none;
+      margin: 0 auto;
+    }
+    .table-of-contents {
+      display: none;
+    }
   }
   .aside{
     display: none;
