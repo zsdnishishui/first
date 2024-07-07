@@ -103,7 +103,7 @@ INSERT INTO distributed_lock (lock_key, lock_value, expire) VALUES ('TxTimeoutCh
 
 
 
-### 修改：D:\seata-server-2.0.0\seata\conf\application.yml
+### 修改：D:/seata-server-2.0.0/seata/conf/application.yml
 
 ```
 # 服务端口号
@@ -181,7 +181,7 @@ seata:
       urls: /,/**/*.css,/**/*.js,/**/*.html,/**/*.map,/**/*.svg,/**/*.png,/**/*.ico,/console-fe/public/**,/api/v1/auth/login
 ```
 
-### 启动：D:\seata-server-2.0.0\seata\bin\seata-server.bat
+### 启动：D:/seata-server-2.0.0/seata/bin/seata-server.bat
 
 启动成功之后可以访问UI
 
